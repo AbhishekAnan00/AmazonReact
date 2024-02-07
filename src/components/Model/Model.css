@@ -1,0 +1,36 @@
+.model {
+  position: absolute;
+  left: 40%;
+  box-shadow: 0px 0px 10px 0px;
+  width: 300px;
+  margin-top: 100px;
+  padding-right: 15px;
+}
+.model p {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.model-input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 0.5px solid #f08804;
+  outline: none;
+  font-size: 18px;
+}
+.model-order-btn {
+  text-align: center;
+  width: 100%;
+  background-color: #f08804;
+  color: white;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.model-order-btn:hover {
+  background-color: #f08a04ef;
+}
+.model-preview {
+  padding: 40px;
+}

@@ -1,0 +1,19 @@
+.image img {
+  width: 100%;
+}
+
+.right-arrow {
+  position: relative;
+  top: -300px;
+  left: 97%;
+  font-size: 3rem;
+}
+.left-arrow{
+  position: absolute;
+  font-size: 3rem;
+  top: 300px;
+}
+.centerproduct{
+  position: absolute;
+  top: 370px;
+}

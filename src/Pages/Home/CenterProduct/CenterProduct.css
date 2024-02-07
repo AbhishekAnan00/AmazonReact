@@ -1,0 +1,30 @@
+.center-product-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  height: 300px;
+  width: 250px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  box-shadow: 2px 5px 10px 0px;
+  background-color: white;
+}
+.center-image{
+  width: 250px;
+  height: 300px;
+  object-fit: contain;
+}
+.title{
+  color: #0F1111;
+  font-size: 21px;
+  font-weight: 700;
+}
+.center-product{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.see-more{
+ color: #007185;
+ font-size: 18px;
+}

@@ -1,0 +1,20 @@
+.product-info-page{
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  margin: 100px 100px;
+}
+.product-info-left{
+  background-color: grey;
+  height: 200px;
+  width: 200px;
+}
+.product-info-right{
+  width: 250px;
+}
+.btn{
+  background-color: rgba(0, 0, 255, 0.808);
+  color: white;
+  border: none;
+}
