@@ -1,9 +1,17 @@
 # Work On Amazon Project
 
 TECH Used - "React js , Node npm , Redux , Redux-ToolKit , Firebase(Database) " ,
+
+
 FEAT - " Search & Search Filter , Category Wise Filter , Sign in & Sign Out , Authentication , StoreData in FireStore at Firebase and For Payment , Use Of Razorpay" ! ,
+
+
 FIX - "Fixed a bug of razorpay while payment mode " ,
+
+
 STYLE - For this , uses simple css ! (Exclude Framework) ,
+
+
  & TEST - Razorpay testing related to payment .
 
 
