@@ -18,8 +18,10 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Children } from "react";
 import { ProductCart } from "./components/ProductCart/ProductCart";
+import { useReducer } from "react";
 
 function App() {
+
   return (
     <>
       <MyState>
@@ -40,7 +42,7 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/productinfo/:id" element={<ProductInfo />} />
             <Route path="/model" element={<Model />} />
-            <Route path="/productcart" element={<ProductCart />} />
+            <Route path="/productcart" element={<ProductCart  />} />
           </Routes>
           <ToastContainer />
         </Router>

@@ -46,6 +46,22 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
 }
+.sorting{
+  position: absolute;
+  right: 120px;
+  top: 120px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.sorting-select{
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+.sorting-label{
+  border: 1px solid grey;
+  padding: 5px;
+}
 .add-btn{
   background-color: #F08804;
   color: white;

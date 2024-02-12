@@ -48,7 +48,7 @@ export const Home = () => {
         </div>
         <div className="image">
           {HeroList.map((item, index) => {
-            return current === index && <img src={item.cover} alt="" />;
+            return current === index && <img src={item.cover} alt="" key={item.id} />;
           })}
         </div>
         <div className="right-arrow" onClick={nextSlide}>

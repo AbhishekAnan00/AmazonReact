@@ -58,7 +58,7 @@ export const CenterProduct = () => {
     <div className="center-product">
       {CenterProductList.map((item) => {
         return (
-          <div className="center-product-info">
+          <div key={item.id} className="center-product-info">
             <p className="title">{item.title}</p>
 
             <img src={item.cover} alt={item.title} className="center-image" />

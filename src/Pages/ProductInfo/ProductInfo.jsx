@@ -1,31 +1,41 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./ProductInfo.css";
-import { useParams } from "react-router-dom";
-import { fireDB } from "../../firebase/FirebaseConfig";
-import { toast } from "react-toastify";
-import { useDispatch } from "react-redux";
 import { ProductData } from "../../ProductData";
-import MyContext from "../../Context/Data/MyContext";
+
 export const ProductInfo = () => {
- 
+  const [productData, setProductData] = useState([ProductData]);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const handleProductClick = (productId) => {
+    const clickedProduct = productData.find(
+      (product) => product.id === productId
+    );
+    setSelectedProduct(clickedProduct);
+  };
+
   return (
     <div className="productinfo">
-        <div className="product-info-page">
+      {selectedProduct && (
+        <div
+          className="product-info-page"
+          onClick={() => handleProductClick(product.id)}
+        >
           <div className="product-info-left">
-            <img src={"400*400"} alt={""} />
+            <img src={selectedProduct.img} alt={""} />
           </div>
           <div className="product-info-right">
             <div className="right-info-div1">
-              <h1>title</h1>
-              <b>category</b>
-              <p>discription: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non totam obcaecati similique vitae facilis vel facere voluptatem consectetur magnam!</p>
+              <h1>{}</h1>
+              <b>{}</b>
+              <p>{}</p>
             </div>
             <div className="product-info-div2">
-              <h2>price</h2>
+              <h2>{}</h2>
               <button className="btn">Add To Cart</button> <b>like</b>
             </div>
           </div>
         </div>
+      )}
     </div>
   );
 };

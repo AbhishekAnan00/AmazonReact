@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { LiaShoppingCartSolid } from "react-icons/lia";
@@ -7,11 +7,16 @@ import { useSelector } from "react-redux";
 import amazon_logo from "../../assets/amazon_logo.png";
 import { MdLocationPin } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
-import { ProductData } from "../../ProductData";
 
 export const Navbar = () => {
   const Context = useContext(MyContext);
-  const { mode, toggleMode, searchKey, setSearchKey } = Context;
+  const {
+    searchName,
+    setSearchName,
+    uniqueOption,
+    selectedOption,
+    setSelectedOption,
+  } = Context;
   //cart-count
   const cartItem = useSelector((state) => state.cart);
 
@@ -23,12 +28,21 @@ export const Navbar = () => {
     localStorage.clear("user");
     window.location.href = "/login";
   };
+  const search = () => {
+    window.location.href = "/productcart";
+  };
+
+  //all option
+  const handleOnChangeAll = () => {
+    setSelectedOption("")
+  }
   return (
     <div className="navbar ">
-      <nav
-      >
+      <nav>
         <div className="logo border">
-         <Link to="/"><img src={amazon_logo} alt="" className="logo" /></Link> 
+          <Link to="/">
+            <img src={amazon_logo} alt="" className="logo" />
+          </Link>
         </div>
         <div className="location border">
           <div className="add-first">
@@ -44,15 +58,17 @@ export const Navbar = () => {
         <div className="nav-search">
           <select
             className="search-select"
-            name="searchkey"
-            value={searchKey}
-            onChange={(e) => setSearchKey(e.target.value)}
+            name="selectedOption"
+            value={selectedOption}
+            onChange={(e) => setSelectedOption(e.target.value)}
           >
-            {ProductData.map((item) => {
+            <option onClick={handleOnChangeAll} value={setSelectedOption}>All</option>
+            {[...uniqueOption].map((options, index) => {
               return (
                 <>
-                  <option>All</option>
-                  <option>{item.title}</option>
+                  <option key={index} value={options}>
+                    {options}
+                  </option>
                 </>
               );
             })}
@@ -61,12 +77,12 @@ export const Navbar = () => {
             className="search-input"
             type="text"
             placeholder="search product"
-            value={searchKey}
-            name="searchKey"
-            onChange={(e) => setSearchKey(e.target.value)}
+            value={searchName}
+            name="searchName"
+            onChange={(e) => setSearchName(e.target.value)}
           />
           <div className="search-icon">
-            <IoSearch />
+            <IoSearch onClick={search} />
           </div>
         </div>
         <div className="flag border">

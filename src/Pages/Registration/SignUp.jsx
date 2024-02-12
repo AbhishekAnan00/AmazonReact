@@ -6,6 +6,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, fireDB } from "../../firebase/FirebaseConfig";
 import { Timestamp, addDoc } from "firebase/firestore";
 import { collection } from "firebase/firestore";
+import amazon_logo from "../../assets/amazon_logo.png";
 
 export const SignUp = () => {
   const [name, setName] = useState("");
@@ -42,6 +43,7 @@ export const SignUp = () => {
   return (
     <div className="sign">
       <div className="login">
+      <img src={amazon_logo} alt="" style={{ height: "45px" , width: "80px" }} />
         <h2>Create account</h2>
         <div className="login-input">
           <b>Your name</b>

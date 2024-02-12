@@ -6,7 +6,7 @@ const initialState = JSON.parse(localStorage.getItem("cart"))?? [];
 const cartSlice = createSlice({
   name: "Cart",
   initialState,
-  reducers: {
+  reducers: { 
     addToCart(state, action) {
       state.push(action.payload);
     },

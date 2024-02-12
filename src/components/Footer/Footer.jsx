@@ -11,10 +11,10 @@ export const Footer = () => {
   }
   return (
     <div className="footer" style={{ backgroundColor: mode === "dark" ? "grey" : ""}}>
-        <div class="footer-panel-1">
+        <div className="footer-panel-1">
             <p onClick={backtotop}>Back to top</p>
         </div>
-        <div class="footer-panel-2">
+        <div className="footer-panel-2">
             <ul><p>Get to Know Us</p>
                 <a>About Us</a>  
                 <a>Careers</a>
@@ -46,18 +46,18 @@ export const Footer = () => {
                 <a>Help</a>
             </ul>
         </div>
-        <div class="footer-panel-3">
-            <div class="panel-logo">
+        <div className="footer-panel-3">
+            <div className="panel-logo">
               <img src={amazon_logo} alt="amazon" className='panel-logo' />
             </div>
         </div>
-        <div class="footer-panel-4">
-            <div class="copyright-notice">
+        <div className="footer-panel-4">
+            <div className="copyright-notice">
                 <a>Conditions of Use & Sales</a>
                 <a>Privacy Notice</a>
                 <a>Interest Based-Ads</a>
             </div>
-            <div class="copyright">
+            <div className="copyright">
                 © 1996-2024, Amazon.com, Inc. or its affiliates
             </div>
 

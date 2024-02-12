@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase/FirebaseConfig";
+import amazon_logo from "../../assets/amazon_logo.png"
 
 export const Login = () => {
   const [loginEmail, setLoginEmail] = useState("");
@@ -29,6 +30,7 @@ export const Login = () => {
   return (
     <div className="sign">
     <div className="login">
+      <img src={amazon_logo} alt="" style={{ height: "45px" , width: "80px" }} />
       <h2>Sign in</h2>
       <div className="login-input">
         <b>Enter Your Email</b>
