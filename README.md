@@ -15,5 +15,6 @@ STYLE - For this , uses simple css ! (Exclude Framework) ,
  & TEST - Razorpay testing related to payment .
 
 
+https://github.com/AbhishekAnan00/amazon_clone_react/assets/156063395/369431b3-8e7a-4db8-8219-ea8f2a61634e
 
-https://github.com/AbhishekAnan00/amazon_clone_react/assets/156063395/4c949cb1-c3f1-46a8-9182-04bcf0d385d4
+
