@@ -13,9 +13,10 @@ import { addToCart } from "../../redux/CartSlice";
 import { toast } from "react-toastify";
 import { Filter } from "../Filter/Filter";
 import { Layout } from "../Layout/Layout";
+import { Star } from "./Star/Star";
+
 
 export const ProductCart = () => {
-
   const Context = useContext(MyContext);
   const {
     searchKey,
@@ -124,6 +125,10 @@ export const ProductCart = () => {
               </div>
             </div>
             <div className="product-cart-list">
+              
+              
+                 
+              
               {ProductData.filter((obj) =>
                 obj.title.toLowerCase().includes(searchKey)
               )
@@ -137,7 +142,7 @@ export const ProductCart = () => {
                 .filter((obj) =>
                   obj.options.toLowerCase().includes(selectedOption)
                 )
-                .map((item, index) => {
+                .map((item, index) => {                         
                   return (
                     <>
                       <div className="card" key={index}>
@@ -151,6 +156,7 @@ export const ProductCart = () => {
                         />
                         <h6>{item.description}</h6>
                         <h2>{item.title}</h2>
+                        <Star rating={item.rating}/>
                         <p>
                           <b>$</b>
                           {item.price}

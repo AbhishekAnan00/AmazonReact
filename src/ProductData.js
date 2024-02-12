@@ -20,6 +20,7 @@ export const ProductData = [
     category: "mobile",
     options : "mobile",
     color: "blue",
+    rating: 4,
     img: iphone_1,
     description:
       "If you are a photography enthusiast then the GO PRO Camera is a must-have gadget.",
@@ -31,6 +32,7 @@ export const ProductData = [
     price: "998",
     category: "mobile",
     options : "mobile",
+    rating:4.5,
     color: "black",
     img: iphone_2,
     description:
@@ -44,6 +46,7 @@ export const ProductData = [
     category: "mobile",
     options : "mobile",
     color: "grey",
+    rating: 5,
     img: iphone_3,
     description:
       "If you are a photography enthusiast then the GO PRO Camera is a must-have gadget.",
@@ -56,6 +59,7 @@ export const ProductData = [
     category: "watch",
     options : "watch",
     color: "red",
+    rating: 5,
     img: watch_1,
     description:
       "If you are a photography enthusiast then the GO PRO Camera is a must-have gadget.",
@@ -68,6 +72,7 @@ export const ProductData = [
     category:"watch",
     options : "watch",
     color: "black",
+    rating: 4.5,
     img: watch_2,
     description:
       "If you are a photography enthusiast then the GO PRO Camera is a must-have gadget.",
@@ -80,6 +85,7 @@ export const ProductData = [
     category: "watch",
     options : "watch",
     color: "grey",
+    rating: 4.8,
     img: watch_3,
     description:
       "If you are a photography enthusiast then the GO PRO Camera is a must-have gadget.",
@@ -92,6 +98,7 @@ export const ProductData = [
     category: "camera",
     options : "camera",
     color: "black",
+    rating: 4.6,
     img: canon_1,
     description:
       "If you are a photography enthusiast then the Canon EOS 3D DSLR Camera is a must-have gadget.",
@@ -104,6 +111,7 @@ export const ProductData = [
     category: "camera",
     options : "camera",
     color: "grey",
+    rating: 4.5,
     img: canon_2,
     description:
       "If you are a photography enthusiast then the Canon EOS 3D DSLR Camera is a must-have gadget.",
@@ -116,6 +124,7 @@ export const ProductData = [
     category: "camera",
     options : "camera",
     color: "black",
+    rating: 4.5,
     img: canon_3,
     description:
       "If you are a photography enthusiast then the Canon EOS 3D DSLR Camera is a must-have gadget.",
@@ -128,6 +137,7 @@ export const ProductData = [
     category: "camera",
     options : "camera",
     color: "grey",
+    rating: 5,
     img: go_pro1,
     description:
       "If you are a photography enthusiast then the GO PRO Camera is a must-have gadget.",
@@ -140,6 +150,7 @@ export const ProductData = [
     category: "camera",
     options : "camera",
     color: "blue",
+    rating: 4.5,
     img: go_pro2,
     description:
       "If you are a photography enthusiast then the GO PRO Camera is a must-have gadget.",
@@ -152,6 +163,7 @@ export const ProductData = [
     category: "camera",
     options : "camera",
     color: "red",
+    rating: 4.5,
     img: go_pro3,
     description:
       "If you are a photography enthusiast then the GO PRO Camera is a must-have gadget.",

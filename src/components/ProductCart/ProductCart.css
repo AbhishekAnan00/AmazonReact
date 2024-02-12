@@ -18,13 +18,13 @@
 }
 .card h2{
   color: #F08804;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .card p{
   display: flex;
   font-size: 30px;
   font-weight: 900;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .card b{
   font-size: 18px;
@@ -72,4 +72,9 @@
 }
 .add-btn:hover{
   background-color: #f08a04f1;
+}
+.star_icon{
+  color: #F08804;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
 }
