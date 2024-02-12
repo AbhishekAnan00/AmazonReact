@@ -1,8 +1,19 @@
-# React + Vite
+# Work On Amazon Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TECH Used - "React js , Node npm , Redux , Redux-ToolKit , Firebase(Database) " ,
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+FEAT - " Search & Search Filter , Category Wise Filter , Sign in & Sign Out , Authentication , StoreData in FireStore at Firebase and For Payment , Use Of Razorpay" ! ,
+
+
+FIX - "Fixed a bug of razorpay while payment mode " ,
+
+
+STYLE - For this , uses simple css ! (Exclude Framework) ,
+
+
+ & TEST - Razorpay testing related to payment .
+
+
+
+https://github.com/AbhishekAnan00/amazon_clone_react/assets/156063395/4c949cb1-c3f1-46a8-9182-04bcf0d385d4
